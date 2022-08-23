@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box; /* includes padding/borders into height/width */
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0; /* moves calc slightly up and i like it */
+    background: gray;
+}
+
+#calculator {
+    display: grid;
+    justify-content: center; /* moves calc from left side of screen to center */
+    align-content: center; /* instead of stretching from top to bottom, center aligns it */
+    min-height: 100vh; /* instead of touching top, brings it down */
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+#display {
+    grid-column: 1 / -1; /* makes the display a recntangle on top vs a square on right */
+    background-color: rgba(0, 0, 0, 0.69);
+    display: flex; /* this and the next 3 below keep numbers to the right */
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px; /* pushes numbers from the right */
+    word-break: break-all;
+}
+
+#display #previousOperand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+#display #currentOperand {
+    color: white;
+    font-size: 2.5rem;
+}
+
+#calculator > button {
+    font-size: 2rem;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, .69);
+}
+
+.rectangle {
+    grid-column: span 2;
+}
+
+#calculator > button:hover {
+    background-color: rgba(255, 255, 255, .92);
+}
