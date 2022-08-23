@@ -1,0 +1,4 @@
+- Built a simple calculator application employing JavaScript, HTML, and CSS
+- Includes basic functions like addition, subtraction, multiplication, division, all clear, and delete
+- Employed JavaScript classes, constructors, and methods to execute all desired capabilities
+- CSS allowed end product to be aesthetically pleasing easy to use and navigate
