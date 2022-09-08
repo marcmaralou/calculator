@@ -18,7 +18,7 @@ body {
 }
 
 #display {
-    grid-column: 1 / -1; /* makes the display a recntangle on top vs a square on right */
+    grid-column: 1 / -1; /* makes the display a rectangle on top vs a square on right */
     background-color: rgba(0, 0, 0, 0.69);
     display: flex; /* this and the next 3 below keep numbers to the right */
     align-items: flex-end;
