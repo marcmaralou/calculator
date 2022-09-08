@@ -5,7 +5,7 @@
 
 body {
     margin: 0; /* moves calc slightly up and i like it */
-    background: gray;
+    background: linear-gradient(to right, #00AAFF, #8e14ff);
 }
 
 #calculator {
